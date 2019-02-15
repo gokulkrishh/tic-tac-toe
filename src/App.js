@@ -1,28 +1,45 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+
+import logo from './logo.svg'
+import ThemeContext from './ThemeContext'
+import TicTacToe from './TicTacToe'
+
+import './App.css'
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+	getRandomColor() {
+		return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(
+			Math.random() * 256
+		)})`
+	}
+
+	render() {
+		const styles = { backgroundColor: this.getRandomColor() }
+		return (
+			<div style={styles} className="App">
+				<header className="App-header">
+					<a href="/" className="App-link">
+						<img src={logo} className="App-logo" alt="logo" />
+					</a>
+				</header>
+				<TicTacToe />
+				<footer>
+					<p>
+						Built with{' '}
+						<span role="img" aria-label="love">
+							😍
+						</span>{' '}
+						by{' '}
+						<a className="App-link" href="https://github.com/gokulkrishh" target="_blank" rel="noopener noreferrer">
+							Gokul
+						</a>
+					</p>
+				</footer>
+			</div>
+		)
+	}
 }
 
-export default App;
+App.contextType = ThemeContext
+
+export default App

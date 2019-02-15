@@ -1,0 +1,65 @@
+.TicTacToe {
+  margin: 60px auto;
+  width: 510px;
+  height: 510px;
+}
+
+.TicTacToe .lines {
+  width: 510px;
+  height: 510px;
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+  grid-gap: 10px;
+  background-color: #2f3033;
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 50px;
+}
+
+.lines div {
+  background-color: #39393a;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  font-size: 240px;
+  line-height: 105px;
+  transition: all 200ms cubic-bezier(0.165, 0.84, 0.44, 1);
+  user-select: none;
+}
+
+.TicTacToe button {
+  width: 80px;
+  height: 32px;
+  border-radius: 4px;
+  font-size: 16px;
+  appearance: none;
+  margin: 30px auto;
+  font-weight: 600;
+  outline: none;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.TicTacToe button:active,
+.lines div:active {
+  opacity: 0.5;
+}
+
+@media all and (max-width: 480px) {
+  .TicTacToe {
+    margin: 50px auto;
+    width: 310px;
+    height: 310px;
+  }
+
+  .TicTacToe .lines {
+    width: 280px;
+    height: 280px;
+  }
+
+  .TicTacToe .lines div {
+    font-size: 110px;
+    line-height: 60px;
+  }
+}
