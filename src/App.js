@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 
-import logo from './logo.svg'
+import Footer from './Footer'
+import Header from './Header'
+import GameStats from './GameStats'
 import ThemeContext from './ThemeContext'
 import TicTacToe from './TicTacToe'
 
@@ -14,32 +16,19 @@ class App extends Component {
 	}
 
 	render() {
-		const styles = { backgroundColor: this.getRandomColor() }
+		const randomColor = this.getRandomColor()
+		const styles = { backgroundColor: randomColor }
 		return (
-			<div style={styles} className="App">
-				<header className="App-header">
-					<a href="/" className="App-link">
-						<img src={logo} className="App-logo" alt="logo" />
-					</a>
-				</header>
-				<TicTacToe />
-				<footer>
-					<p>
-						Built with{' '}
-						<span role="img" aria-label="love">
-							😍
-						</span>{' '}
-						by{' '}
-						<a className="App-link" href="https://github.com/gokulkrishh" target="_blank" rel="noopener noreferrer">
-							Gokul
-						</a>
-					</p>
-				</footer>
-			</div>
+			<ThemeContext.Provider value={{ backgroundColor: randomColor }}>
+				<div style={styles} className="App">
+					<Header />
+					<TicTacToe />
+					<GameStats />
+					<Footer />
+				</div>
+			</ThemeContext.Provider>
 		)
 	}
 }
-
-App.contextType = ThemeContext
 
 export default App

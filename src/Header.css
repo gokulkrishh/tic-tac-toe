@@ -1,0 +1,32 @@
+header {
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+header a {
+  display: block;
+  position: fixed;
+  top: 30px;
+  user-select: none;
+}
+
+header img {
+  animation: logo-spin infinite 20s linear;
+  width: 65px;
+  height: 65px;
+  pointer-events: none;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

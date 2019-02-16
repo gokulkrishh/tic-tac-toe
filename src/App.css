@@ -3,34 +3,6 @@
   height: 100%;
 }
 
-.App header a {
-  display: block;
-  position: fixed;
-  top: 30px;
-  user-select: none;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  width: 65px;
-  height: 65px;
-  pointer-events: none;
-}
-
-.App-header {
-  height: 140px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #000;
-}
-
 .App footer {
   text-align: center;
   position: fixed;
@@ -47,11 +19,3 @@
   color: #212121;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
