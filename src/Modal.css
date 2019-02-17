@@ -1,0 +1,43 @@
+.Modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+  border-radius: 8px;
+  width: 350px;
+  height: 300px;
+  z-index: 1;
+}
+
+.Modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5)
+}
+
+.Modal button {
+  margin: 30px auto;
+}
+
+.Modal h2 {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media all and (max-width: 480px) {
+  .Modal {
+    width: 280px;
+    height: 240px;
+  }
+
+  .Modal h2 {
+    margin-top: 70px;
+  }
+}

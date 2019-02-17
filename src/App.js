@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import Footer from './Footer'
 import Header from './Header'
-import GameStats from './GameStats'
 import ThemeContext from './ThemeContext'
 import TicTacToe from './TicTacToe'
 
@@ -23,7 +22,6 @@ class App extends Component {
 				<div style={styles} className="App">
 					<Header />
 					<TicTacToe />
-					<GameStats />
 					<Footer />
 				</div>
 			</ThemeContext.Provider>

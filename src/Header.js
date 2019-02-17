@@ -2,7 +2,7 @@ import React from 'react'
 
 import logo from './logo.svg'
 
-import './header.css'
+import './Header.css'
 
 const Header = () => (
 	<header>

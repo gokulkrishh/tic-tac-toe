@@ -2,13 +2,13 @@ import React from 'react'
 
 import './GameStats.css'
 
-const GameStats = () => (
+const GameStats = ({ stats }) => (
 	<div className="GameStats">
 		<span>
-			<b>You:</b> {0}
+			<b>You:</b> {stats.player}
 		</span>
 		<span>
-			<b>Computer:</b> {0}
+			<b>Computer:</b> {stats.computer}
 		</span>
 	</div>
 )
