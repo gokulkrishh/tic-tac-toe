@@ -93,8 +93,8 @@ class TicTacToe extends Component {
 							)
 						})}
 					</div>
+					<GameStats stats={stats} />
 				</div>
-				<GameStats stats={stats} />
 				<Modal won={won} player={this.player} show={won.index > -1} restartGameCallback={this.restartGame} />
 			</>
 		)

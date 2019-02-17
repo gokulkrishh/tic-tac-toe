@@ -3,9 +3,9 @@
   height: 100%;
 }
 
-.App footer {
+footer {
   text-align: center;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -14,8 +14,8 @@
   font-size: 12px;
 }
 
-.App footer,
-.App footer a {
+footer,
+footer a {
   color: #212121;
 }
 

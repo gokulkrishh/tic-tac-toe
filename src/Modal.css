@@ -40,4 +40,8 @@
   .Modal h2 {
     margin-top: 70px;
   }
+
+  .Modal button {
+    font-size: 12px;
+  }
 }

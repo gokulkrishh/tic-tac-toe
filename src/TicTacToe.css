@@ -1,7 +1,12 @@
 .TicTacToe {
-  margin: 60px auto;
   width: 510px;
   height: 510px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .TicTacToe .lines {
@@ -48,7 +53,6 @@
 
 @media all and (max-width: 480px) {
   .TicTacToe {
-    margin: 50px auto;
     width: 310px;
     height: 310px;
   }

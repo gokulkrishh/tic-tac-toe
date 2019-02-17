@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   width: 160px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 @media all and (max-width: 480px) {
   .GameStats {
-    margin: -10px auto;
+    margin: 30px auto;
   }
 }
