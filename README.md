@@ -1,6 +1,6 @@
 # [Tic Tac Toe](https://tic-tac-toe-demo.surge.sh)
 
-> Most dumb tic tac toe game ever built using react hooks :P
+> Most dumbest tic tac toe game ever built using react hooks :P
 
 ## [Live](https://tic-tac-toe-demo.surge.sh)
 
